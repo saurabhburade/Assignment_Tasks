@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.ofootprint{
+    color: white    ;
+     margin: 0% ;
+    padding: 3% 10%;
+    background: #38389c;
+}
+.stepDetail{
+    background: white;
+    color: black    ;
+    
+    
+}
+.stepsCintainer{
+ 
+    background: linear-gradient( white 0% 70%, #38389c 70% 100%);
+    
+}
+.step{
+    border: none;
+    box-shadow: 0px -2px 5px rgb(124, 122, 122);
+    color: #4b4949;
+    
+}
+.bg-blue{
+    background: #38389c;
+    color: white;
+}
+.bodList{
+     padding: 5% 10%;
+    background: #38389c;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+     
+}
+.bodCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   margin: 2%;
+   padding: 1% 0%;
+    width: 250px;
+    overflow: hidden;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #1c1c52;
+    
+}
+.title{
+    color: #4b4949;
+    
+}
+.bodCard h3,
+.title h3,
+.title p{
+    padding: 5%;
+}
+
+.bodImg img{
+    width: 100%;
+}
+.bodCard > h3{
+    color: #38389c;
+    
+}
+@media(max-width:760px){
+    .stepsCintainer{
+ 
+    background: linear-gradient( white 0% 85%, #38389c 85% 100%);
+    
+}
+.bodCard{
+    transform: scale(0.7);
+      margin: 0;
+    padding: 0;
+}
+
+}

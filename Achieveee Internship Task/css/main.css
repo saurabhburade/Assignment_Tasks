@@ -1,0 +1,401 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    box-shadow: 0px 1px 10px gainsboro;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+     flex-direction: row;   
+ 
+}
+
+.navbar div {
+    margin: 2% 10%;
+}
+
+.menuitems ul {
+    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-weight: 500;
+}
+.menuListContainer li{
+  margin: 0% 2%;
+}
+
+.menuListContainer li a {
+    display: block;
+    width: 100%;
+    margin: 0px 30px;
+    text-decoration: none;
+    color: #4b4949;
+}
+
+.firstDiv {
+    background: linear-gradient(white 0% 85%, rgb(56, 56, 156) 85% 100%);
+    display: flex;
+    margin-top: 3%;
+    padding: 1%;
+}
+
+.text {
+    width: 500px;
+    padding: 2% 10%;
+    text-align: left;
+}
+.text p{
+    color: #777171;
+    
+}
+.text h3 {
+    color: #4b4949;
+    
+    margin: 2%;
+    font-size: 44px;
+}
+.imgFirstDiv{
+    width: 500px;
+
+}
+.imgFirstDiv img {
+    width:100% ;
+    border-radius: 5px;
+}
+.stepDetail
+{
+    color: white;
+      background:  rgb(56, 56, 156);
+    padding: 2% 10%;
+    line-height: 30px;
+}
+.stepDetail
+h3{
+    font-size: 24px;
+}
+.stepsCintainer{
+      color: white;
+    background: linear-gradient(#38389c 0% 50%, #d8d8dd 50% 100%);
+      
+    padding: 2% 10%;
+    line-height: 30px;
+}
+.stepsList,.stepsCintainer{
+    display:flex;
+    justify-content: space-evenly;
+  
+    
+}
+.arrowLeft,.arrowRight{
+    margin: 3%;
+    background-color: rgb(64, 158, 158);
+    padding: 2%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+.arrowLeft img,.arrowRight img{
+    width:20px; 
+}
+.step{
+    width: 250px;
+    margin: 2%;
+    padding: 3%;
+    background: whitesmoke;
+    border-radius: 5px;
+   color: #38389c;
+    font-weight: 500;
+    box-shadow: 0px 2px 5px rgb(189, 177, 177);
+    border: none;
+    
+    
+}
+.shipping{
+    background:#d8d8dd ;
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 10%;
+    
+}
+
+.shippingImg{
+    width: 900px;
+}
+.shippingImg img{
+    border-radius: 5px;
+    width: 100%;
+} 
+.shippingDetail{    
+    padding: 5% 0%;
+}
+.shippingDetail h3{
+    font-size: 24px;
+}
+.shippingDetail p{
+    font-size: 18px;
+}
+.shippingDetail button{
+    margin: 10% 0%;
+    background:#38389c ;
+    
+}
+.btn{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 2% 4%;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    margin:10% ;
+}
+.heading{
+    font-size: 24px;
+}
+.subhead{
+    margin: 2% 0%;
+    font-size: 18px;
+      display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.visit{
+    font-weight: 500;
+    color: #38389c;
+    cursor: pointer;
+}
+
+.cardContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cardimg{
+    width: 350px;
+}
+.cardimg img{
+    width: 100%;
+}
+.card{
+    overflow: hidden;
+    width: 350px;
+    height: 320px;
+    box-shadow: 0px 0.5px 10px rgb(212, 203, 203);
+    border-radius: 5px;
+}
+.cardDetail{
+    padding-top: 5%;
+    text-align: center;
+    line-height: 25px;
+}
+.cardDetail p{
+    font-size: 14px;
+}
+.footUp{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ 
+}
+footer{
+    padding: 2% 10%;
+    
+       background: rgb(85, 83, 81);  
+    color: white; 
+}
+
+.footerLogo{
+    color: white;
+}
+.footerListContainer {
+    list-style: none;
+    line-height: 35px;
+    text-decoration: none;
+    color: white;
+}
+
+.footerListContainer li a{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+
+}
+.address{
+    line-height: 30px;
+    font-size: 14px;
+    
+}
+.footerLogo {
+margin-top: 5%;    
+    font-size: 24px;
+}
+.footDown{
+    
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.footDown p a{
+    text-decoration: none;
+    color: white;
+    
+}
+.menuBtn{
+    display: none;
+}
+@media (max-width:760px){
+ 
+    
+   .navbar,.stepsList,.footUp{
+        flex-wrap: wrap;
+    }
+   .menuitems ul,.navbar{
+     flex-direction: column;   
+    }
+    .menuBtn{
+        background: #38389c;
+    transform: scale(0.8);
+    display: block;
+    
+    width:30%;
+  
+        
+ 
+}
+.logo{
+   padding: 2%;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+.menuitems ul{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.text,.shippingDetail ,.stepDetail {
+    padding: 4% ;
+}
+.text h3{
+    font-size: 18px;
+}
+.stepDetail h3,.shippingDetail h3,.heading h3{
+    font-size: 14px;
+    
+}
+.text p,.subhead{
+    font-size: 10px;
+    
+}
+.stepDetail p,.shippingDetail p{
+    font-size: 8px;
+     
+}
+.stepDetail{
+    line-height: 20px;
+    padding: 5% 5%;
+}
+.stepsCintainer{
+    justify-content: center;
+    align-items: center;
+}
+.step{
+    transform: scale(0.8);
+}
+.arrowLeft,.arrowRight{
+  transform: scale(0.8);  
+  width: 50px;
+  height: 30px;
+  padding: 5%;
+  
+}
+.shippingDetail{
+    padding:5% 10%;
+    margin: 5;
+}
+.shippingDetail button{
+    transform: scale(.5);
+  padding: 5%;
+  margin: 0%;
+    
+}
+.shippingImg{
+    display:flex;
+   transform: scale(1.1);
+    justify-content:center;
+    align-items: center;
+}
+.cardContainer{
+    flex-direction: column;
+}
+.cardimg,.cardDetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+.cardimg{
+    overflow: hidden;
+    padding: 2%;
+    border-radius: 2px;
+}
+.cardimg img{
+width: 150px;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    margin: 5% 0%;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 0.5px 10px rgb(212, 203, 203);
+    border-radius: 5px;
+}
+.cardDetail{
+padding: 0;
+margin: 0;
+transform: scale(0.5);
+}
+ .footUp{
+    margin: 1%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;    
+ 
+}
+.footerLogo{
+        
+    transform: scale(0.6);
+   
+}
+.footerListContainer li a,.address,.footDown{
+    font-size: 10px;
+}
+.footerLogo img{
+    padding: 0px;
+        margin: 0px;
+}
+.footerListContainer,.address,.footDown{
+    line-height: 20px;
+}
+.address{
+    margin: 5% 0%;
+    
+}
+}
