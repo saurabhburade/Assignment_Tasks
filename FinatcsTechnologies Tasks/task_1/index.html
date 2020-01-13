@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 1</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body>
+    <div class="all">
+        <section>
+            <div>
+
+                <nav class="nav">
+
+                    <div class="logo">
+                        <img class="limg" src="./img/home.png" alt=""> <span>The Residence</span>
+                    </div>
+                    <ul>
+
+                        <li class="about ptr" onclick="About(this)">About</li>
+                        <li class="gallary ptr" onclick="Gallery()">Gallery</li>
+                        <li class="htb ptr" onclick="Htb()">How to buy</li>
+                        <li class="contact ptr" onclick="Contact()">Contact</li>
+                    </ul>
+
+                </nav>
+
+            </div>
+        </section>
+        <section class="viz">
+            <div class="gal-text ">
+                <h3>Gallery</h3>
+                <p>Gallery is divided into sections according to their residences</p>
+            </div>
+            <section class="s-gall   ">
+                <div class="gal " onclick="constr()">
+                    <div class="gal-title">
+                        <span class="t-indicator"></span>
+                        <span class="title">Construction Progress</span>
+
+                    </div>
+                    <div class="gal-details">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quas ad unde aliquam
+                            illo,
+                            nemo
+                            ut?</p>
+                        <p>10 Photos</p>
+                    </div>
+                    <div class="gal-img">
+                        <img class="img" src="./img/01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="gal " onclick="exterior()">
+                    <div class="gal-title">
+                        <span class="t-indicator"></span>
+                        <span class="title">Exteriors</span>
+
+                    </div>
+                    <div class="gal-details">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quas ad unde aliquam
+                            illo,
+                            nemo
+                            ut? </p>
+                        <p>10 Photos</p>
+                    </div>
+                    <div class="gal-img">
+                        <img src="./img/01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="gal " onclick="interior()">
+                    <div class="gal-title">
+                        <span class="t-indicator"></span>
+                        <span class="title">Interiors</span>
+                    </div>
+                    <div class="gal-details">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quas ad unde aliquam
+                            illo,
+                            nemo
+                            ut?</p>
+                        <p>10 Photos</p>
+                    </div>
+                    <div class="gal-img">
+                        <img src="./img/01.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="a-gall">
+            <div class="detail">
+                <span class="t-indicator"></span>
+                <span class="title">Interiors</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis accusantium impedit tempore
+                    culpa
+                    nulla debitis. </p>
+            </div>
+            <div class="s-img">
+                <img src="./img/mt.jpg" alt="">
+            </div>
+            <div class="bottom-bar">
+                <div class="det">
+                    <span class="t-indicator"></span>
+                    <span class="title">POET'S RESIDENCE</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="sub-img">
+                    <img class="active" src="./img/mt.jpg" alt="">
+                    <img src="./img/mt.jpg" alt="">
+                    <img src="./img/mt.jpg" alt="">
+                    <img src="./img/mt.jpg" alt="">
+                    <img src="./img/mt.jpg" alt="">
+
+                </div>
+            </div>
+        </section>
+        <section class="abt">
+            <div class="tp">
+                <div>
+                    <h3>Project Concept</h3>
+                </div>
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi laborum alias modi recusandae
+                        minus
+                        illum nemo omnis perferendis non, amet cumque quis necessitatibus aut, quaerat error est! Enim,
+                        et
+                        corrupti.</p>
+                </div>
+
+            </div>
+            <div class="mid-img">
+                <img src="./img/mt.jpg" alt="">
+                <div class="btm">
+                    <div>
+                        Let's Explore
+                    </div>
+                    <div>
+                        >
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <footer>
+    <h3>Made by Saurabh Burade</h3>    
+    
+    </footer>
+</body>
+<script>
+    $(document).ready(() => {
+        $(".viz").show();
+
+        $(".a-gall").hide();
+        $(".abt").hide();
+
+        $(".gallary").addClass("active")
+
+    })
+    function constr() {
+        setTimeout(() => {
+            $(".viz").hide();
+            $(".a-gall").show()
+        }, 900)
+        $(".gal").addClass("to-bottom")
+        $(".gal-text").addClass("to-top")
+
+    }
+    function About() {
+        setTimeout(() => {
+            $(".viz").hide();
+            $(".a-gall").hide();
+        }, 900)
+        $(".a-gall").addClass("transfer");
+
+        $(".gallary").removeClass("active")
+        $(".htb").removeClass("active")
+        $(".contact").removeClass("active")
+        $(".about").addClass("active")
+        $(".tp").addClass("top-to-org")
+        $(".gal").addClass("to-bottom")
+        $(".gal-text").addClass("to-top")
+
+        setTimeout(() => {
+            $(".viz").hide();
+
+            $(".abt").show();
+        }, 900)
+        console.log("done");
+    }
+    function Gallery() {
+        $(".a-gall").removeClass("transfer");
+
+        $(".gal").removeClass("to-bottom")
+        $(".gal-text").removeClass("to-top")
+        $(".htb").removeClass("active")
+        $(".contact").removeClass("active")
+        $(".about").removeClass("active")
+        $(".gallary").addClass("active")
+        setTimeout(() => {
+            $(".viz").fadeIn(600);
+            $(".abt").hide();
+
+            $(".a-gall").hide();
+        }, 900)
+
+        console.log("done");
+    }
+    function Htb() {
+        $(".gallary").removeClass("active")
+        $(".htb").addClass("active")
+        $(".contact").removeClass("active")
+        $(".about").removeClass("active")
+        console.log("done");
+    }
+    function Contact() {
+        $(".gallary").removeClass("active")
+        $(".htb").removeClass("active")
+        $(".contact").addClass("active")
+        $(".about").removeClass("active")
+        console.log("done");
+    }
+</script>
+
+</html>

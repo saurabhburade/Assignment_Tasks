@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<link rel="stylesheet" href="./styles.css">
+
+
+
+
+</head>
+
+<body>
+            <center><h3>Basic CRUD operations</h3></center>
+<br>
+<br>
+
+
+
+
+<div class="conatiner">
+<div class="inputs">
+        <label for="name">Name : </label>
+        <input type="text" id="name" name="name" required>
+        <label for="age">Age : </label>
+        <input type="number" id="age" name="age" required>
+</div>
+<div class="btns">
+    
+            <button id="add" class="btn" onclick="add()">Add data</button>
+            
+            
+            <button class="btn" onclick="showAll()">Show data</button>
+            
+            <button class="btn" onclick="deleteAll(event)">Delete data</button>
+</div>
+        
+        <br>
+        <br>
+        
+        <div id="data">
+    
+</div>
+
+    </div>
+
+        <footer>
+            
+            <center><h3>Made by Saurabh Burade</h3></center>
+        
+        </footer>
+
+</body>
+
+
+
+<script src="./main.js"></script>
+
+
+
+
+
+</html>
